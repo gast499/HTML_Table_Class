@@ -12,8 +12,9 @@ $elements = array(
     array('Happy' , 'Sad' , 'Mad' ),
     array('Bush' , 'Obama' , 'Washington' )
 );
+$headers = True;
 $tbl = new MyTable();
-$tbl->display($elements);
+$tbl->display($elements, $headers);
 ?>
 </table>
 
