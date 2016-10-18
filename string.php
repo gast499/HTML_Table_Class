@@ -49,6 +49,12 @@ echo '<br>';
 // Outputs: A &#039;quote&#039; is &lt;b&gt;bold&lt;/b&gt;
 echo htmlentities($str, ENT_QUOTES);
 
+//using html special chars decode
+echo '<br><br>HTML Special Chars Decode Method:<br>';
+$str2 = "<p>this -&gt; &quot;</p>\n";
+echo htmlspecialchars_decode($str2);
+// note that here the quotes aren't converted
+echo htmlspecialchars_decode($str2, ENT_NOQUOTES);
 ?>
 	</body>
 </html>
