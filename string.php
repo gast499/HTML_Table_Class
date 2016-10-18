@@ -80,6 +80,23 @@ echo "$bar";
 echo '<br>After lcfirst method: ';
 $bar = lcfirst($bar);             // hELLO WORLD!
 echo "$bar";
+
+//using ltrim
+echo '<br><br>LTrim Method:<br>Before LTrim method:<br>';
+$text = "\t\tThese are a few words :) ...  ";
+$hello  = "Hello World";
+echo "$text" . '<br>' . "$hello" . '<br>';
+
+echo 'After LTrim method: <br>';
+
+$trimmed = ltrim($text);
+echo "$trimmed";
+echo '<br>';
+$trimmed = ltrim($text, " \t.");
+echo "$trimmed";
+echo '<br>';
+$trimmed = ltrim($hello, "Hdle");
+echo "$trimmed";
 ?>
 	</body>
 </html>
