@@ -37,6 +37,18 @@ echo '<br>Pieces[0]: ';
 echo $pieces[0]; // piece1
 echo '<br>Pieces[1]: ';
 echo $pieces[1]; // piece2
+
+//using html entities
+echo '<br><br>HTML Entities Method:<br>';
+$str = "A 'quote' is <b>bold</b>";
+echo "$str";
+echo '<br>';
+// Outputs: A 'quote' is &lt;b&gt;bold&lt;/b&gt;
+echo htmlentities($str);
+echo '<br>';
+// Outputs: A &#039;quote&#039; is &lt;b&gt;bold&lt;/b&gt;
+echo htmlentities($str, ENT_QUOTES);
+
 ?>
 	</body>
 </html>
