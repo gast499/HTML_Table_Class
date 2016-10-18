@@ -55,6 +55,11 @@ $str2 = "<p>this -&gt; &quot;</p>\n";
 echo htmlspecialchars_decode($str2);
 // note that here the quotes aren't converted
 echo htmlspecialchars_decode($str2, ENT_NOQUOTES);
+
+//using html special chars
+echo '<br><br>HTML Special Chars Method:<br>';
+$new = htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
+echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;
 ?>
 	</body>
 </html>
