@@ -67,6 +67,19 @@ $array = array('lastname', 'email', 'phone');
 $comma_separated = implode(",", $array);
 echo $comma_separated; // lastname,email,phone
 
+//using lcfirst
+echo '<br><br>LCFirst Method:<br>Before lcfirst method: ';
+$foo = 'HelloWorld';
+echo "$foo";
+echo '<br>After lcfirst method: ';
+$foo = lcfirst($foo);             // helloWorld
+echo "$foo";
+echo '<br>Before lcfirst method: ';
+$bar = 'HELLO WORLD!';
+echo "$bar";
+echo '<br>After lcfirst method: ';
+$bar = lcfirst($bar);             // hELLO WORLD!
+echo "$bar";
 ?>
 	</body>
 </html>
