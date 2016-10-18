@@ -51,6 +51,14 @@ print_r($stack);
 $fruit = array_pop($stack);
 echo '<br>The array now contains:<br>';
 print_r($stack);
+
+//using array push
+echo '<br><br>Array Push Method:<br>The array contains: <br>';
+$stack = array("orange", "banana");
+print_r($stack);
+array_push($stack, "apple", "raspberry");
+echo '<br>The array now contains:<br>';
+print_r($stack);
 ?>
 	</body>
 </html>
