@@ -165,6 +165,14 @@ echo '<br>Searching for the string "a" in the string "ABC": ';
 if ($pos2 !== false) {
     echo "We found '$findme' in '$mystring2' at position $pos2";
 }
+
+//using strtolower
+echo '<br><br>Str To Lower Method:<br>Before the Str To Lower method: ';
+$str = "Mary Had A Little Lamb and She LOVED It So";
+echo "$str";
+$str = strtolower($str);
+echo '<br>After the Str To Lower method: ';
+echo $str; // Prints mary had a little lamb and she loved it so
 ?>
 	</body>
 </html>
