@@ -86,9 +86,7 @@ echo '<br><br>LTrim Method:<br>Before LTrim method:<br>';
 $text = "\t\tThese are a few words :) ...  ";
 $hello  = "Hello World";
 echo "$text" . '<br>' . "$hello" . '<br>';
-
 echo 'After LTrim method: <br>';
-
 $trimmed = ltrim($text);
 echo "$trimmed";
 echo '<br>';
@@ -97,6 +95,19 @@ echo "$trimmed";
 echo '<br>';
 $trimmed = ltrim($hello, "Hdle");
 echo "$trimmed";
+
+//using md5
+echo '<br><br>md5 Method:<br>';
+$str = 'apple';
+echo "$str";
+echo '<br>';
+$hash = md5($str);
+echo 'The hash value of the string "apple" is: ' . "$hash" . '<br>';
+if (md5($str) === '1f3870be274f6c49b3e31a0c6728957f') {
+    echo "Would you like a green or red apple?";
+}
+
+
 ?>
 	</body>
 </html>
