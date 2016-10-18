@@ -60,6 +60,13 @@ echo htmlspecialchars_decode($str2, ENT_NOQUOTES);
 echo '<br><br>HTML Special Chars Method:<br>';
 $new = htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
 echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;
+
+//using implode
+echo '<br><br>Implode Method:<br>';
+$array = array('lastname', 'email', 'phone');
+$comma_separated = implode(",", $array);
+echo $comma_separated; // lastname,email,phone
+
 ?>
 	</body>
 </html>
