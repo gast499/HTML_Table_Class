@@ -26,6 +26,23 @@ $key = array_search('green', $array); // $key = 2;
 echo '<br>The key for the "green" value is: ' . "$key";
 $key = array_search('red', $array);   // $key = 1;
 echo '<br>The key for the "red" value is: ' . "$key";
+
+//using array walk
+echo '<br><br>Array Walk Method:<br>';
+$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+function test_alter(&$item1, $key, $prefix)
+{
+    $item1 = "$prefix: $item1";
+}
+function test_print($item2, $key)
+{
+    echo "$key. $item2<br />\n";
+}
+echo "Before ...:" . '<br>';
+array_walk($fruits, 'test_print');
+array_walk($fruits, 'test_alter', 'fruit');
+echo "... and after:" . '<br>';
+array_walk($fruits, 'test_print');
 ?>
 	</body>
 </html>
