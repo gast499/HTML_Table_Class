@@ -131,6 +131,18 @@ $healthy = array("fruits", "vegetables", "fiber");
 $yummy   = array("pizza", "beer", "ice cream");
 $newphrase = str_replace($healthy, $yummy, $phrase);
 echo '<br>After StrReplace Method: ' . "$newphrase";
+
+//using str split
+echo '<br><br>Str Split Method:<br>Before Str Split Method: ';
+$str = "Hello Friend";
+echo "$str";
+
+$arr1 = str_split($str);
+$arr2 = str_split($str, 3);
+echo '<br>Array after splitting string into elements 1 character long: <br>';
+print_r($arr1);
+echo '<br>Array after splitting string into elements up to 3 character long: <br>';
+print_r($arr2);
 ?>
 	</body>
 </html>
