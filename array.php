@@ -43,6 +43,14 @@ array_walk($fruits, 'test_print');
 array_walk($fruits, 'test_alter', 'fruit');
 echo "... and after:" . '<br>';
 array_walk($fruits, 'test_print');
+
+//using array pop
+echo '<br><br>Array Pop Method:<br>The array contains: <br>';
+$stack = array("orange", "banana", "apple", "raspberry");
+print_r($stack);
+$fruit = array_pop($stack);
+echo '<br>The array now contains:<br>';
+print_r($stack);
 ?>
 	</body>
 </html>
