@@ -121,6 +121,16 @@ echo "$trimmed";
 echo '<br>';
 $trimmed = rtrim($hello, "Hdle");
 echo "$trimmed";
+
+//using strreplace
+// Provides: You should eat pizza, beer, and ice cream every day
+echo '<br><br>StrReplace Method:<br>Before StrReplace Method: ';
+$phrase  = "You should eat fruits, vegetables, and fiber every day.";
+echo "$phrase";
+$healthy = array("fruits", "vegetables", "fiber");
+$yummy   = array("pizza", "beer", "ice cream");
+$newphrase = str_replace($healthy, $yummy, $phrase);
+echo '<br>After StrReplace Method: ' . "$newphrase";
 ?>
 	</body>
 </html>
