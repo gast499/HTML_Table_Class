@@ -173,6 +173,24 @@ echo "$str";
 $str = strtolower($str);
 echo '<br>After the Str To Lower method: ';
 echo $str; // Prints mary had a little lamb and she loved it so
+
+//using trim
+echo '<br><br>Trim Method:<br>Before Trim method:<br>';
+$text = "\t\tThese are a few words :) ...  ";
+$hello  = "Hello World";
+echo "$text" . '<br>' . "$hello" . '<br>';
+echo 'After Trim method: <br>';
+$trimmed = trim($text);
+echo "$trimmed";
+echo '<br>';
+$trimmed = trim($text, " \t.");
+echo "$trimmed";
+echo '<br>';
+$trimmed = trim($hello, "Hdle");
+echo "$trimmed";
+echo '<br>';
+$trimmed = trim($hello, 'HdWr');
+echo "$trimmed";
 ?>
 	</body>
 </html>
