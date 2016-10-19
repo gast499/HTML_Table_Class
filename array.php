@@ -116,6 +116,17 @@ print_r($input);
 $flipped = array_flip($input);
 echo '<br>The flipped array contians:<br>';
 print_r($flipped);
+
+//using array merge
+echo '<br><br>Array Merge Method:<br>Before merging, the first array contains:<br>';
+$array1 = array("color" => "red", 2, 4);
+print_r($array1);
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+echo '<br>Before merging, the second array contains:<br>';
+print_r($array2);
+$result = array_merge($array1, $array2);
+echo '<br>After merging, the new array contains:<br>';
+print_r($result);
 ?>
 	</body>
 </html>
