@@ -108,6 +108,14 @@ print_r($a);
 $b = array_fill(-2, 4, 'pear');
 echo '<br>The second array is filled with pears: <br>';
 print_r($b);
+
+//using array flip
+echo '<br><br>Array Flip Method:<br>Before flipping, the array contains:<br>';
+$input = array("oranges", "apples", "pears");
+print_r($input);
+$flipped = array_flip($input);
+echo '<br>The flipped array contians:<br>';
+print_r($flipped);
 ?>
 	</body>
 </html>
