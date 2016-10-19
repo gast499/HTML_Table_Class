@@ -88,6 +88,18 @@ $array = array(1, "hello", 1, "world", "hello");
 print_r($array);
 echo '<br>The number of times each value occurs is:<br>';
 print_r(array_count_values($array));
+
+//using array map
+function cube($n)
+{
+    return($n * $n * $n);
+}
+echo '<br><br>Array Map Method:<br>Before mapping, the array contains: <br>';
+$a = array(1, 2, 3, 4, 5);
+print_r($a);
+$b = array_map("cube", $a);
+echo '<br>After mapping, the mapped array contains:<br>';
+print_r($b);
 ?>
 	</body>
 </html>
