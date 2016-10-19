@@ -82,6 +82,12 @@ $result = array_intersect($array1, $array2);
 echo '<br>The array after intersection contains:<br>';
 print_r($result);
 
+//using array count values
+echo '<br><br>Array Count Values Method:<br>The array contains: <br>';
+$array = array(1, "hello", 1, "world", "hello");
+print_r($array);
+echo '<br>The number of times each value occurs is:<br>';
+print_r(array_count_values($array));
 ?>
 	</body>
 </html>
