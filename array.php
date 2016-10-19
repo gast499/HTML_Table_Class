@@ -138,6 +138,18 @@ print_r($reversed);
 $preserved = array_reverse($input, true);//reserves the keys
 echo '<br>After reversing the reversed array while preserving the key values, the array contains:<br>';
 print_r($preserved);
+
+//using array sum
+echo '<br><br>Array Sum Method:<br>The array contains:<br>';
+$a = array(2, 4, 6, 8);
+print_r($a);
+$suma = array_sum($a);
+echo '<br>The sum of this array is: ' . "$suma";
+echo '<br>The second array contains:<br>';
+$b = array("a" => 1.2, "b" => 2.3, "c" => 3.4);
+print_r($b);
+$sumb = array_sum($b);
+echo '<br>The sum of this array is: ' . "$sumb";
 ?>
 	</body>
 </html>
