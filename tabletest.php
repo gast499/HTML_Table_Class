@@ -6,12 +6,12 @@
 <?php
 require('my_table.class.php');
 $elements = array(
-    array('1' , '2' , '3' ),
-    array('A' , 'B' , 'C' ),
-    array('Food' , 'Water' , 'Sleep' ),
-    array('Happy' , 'Sad' , 'Mad' ),
-    array('Bush' , 'Obama' , 'Washington' )
+    "Model" => array('Toyota', 'Tesla', 'Ferrari'), 
+    "Type" => array('A' , 'B' , 'C'),
+    "Price" => array('10k' , '20k' , '30k')
 );
+$vals = array_values($elements);
+
 $headers = True;
 $tbl = new MyTable();
 $tbl->display($elements, $headers);
