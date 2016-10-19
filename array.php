@@ -70,6 +70,18 @@ print_r($b);
 $c = array_combine($a, $b);
 echo '<br>The combined array contains:<br>';
 print_r($c);
+
+//using array intersect
+echo '<br><br>Array Intersect Method:<br>The first array contains: <br>';
+$array1 = array("a" => "green", "red", "blue");
+print_r($array1);
+$array2 = array("b" => "green", "yellow", "red");
+echo '<br>The second array contains: <br>';
+print_r($array2);
+$result = array_intersect($array1, $array2);
+echo '<br>The array after intersection contains:<br>';
+print_r($result);
+
 ?>
 	</body>
 </html>
