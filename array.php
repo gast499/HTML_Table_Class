@@ -127,6 +127,17 @@ print_r($array2);
 $result = array_merge($array1, $array2);
 echo '<br>After merging, the new array contains:<br>';
 print_r($result);
+
+//using array reverse
+echo '<br><br>Array Reverse Method:<br>Before reversing, the array contains:<br>';
+$input  = array("php", 4.0, array("green", "red"));
+print_r($input);
+$reversed = array_reverse($input);
+echo '<br>After reversing the array:<br>';
+print_r($reversed);
+$preserved = array_reverse($input, true);//reserves the keys
+echo '<br>After reversing the reversed array while preserving the key values, the array contains:<br>';
+print_r($preserved);
 ?>
 	</body>
 </html>
