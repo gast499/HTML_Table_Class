@@ -59,6 +59,17 @@ print_r($stack);
 array_push($stack, "apple", "raspberry");
 echo '<br>The array now contains:<br>';
 print_r($stack);
+
+//using array combine
+echo '<br><br>Array Combine Method:<br>The key array contains: <br>';
+$a = array('green', 'red', 'yellow');
+print_r($a);
+$b = array('avocado', 'apple', 'banana');
+echo '<br>The value array contains: <br>';
+print_r($b);
+$c = array_combine($a, $b);
+echo '<br>The combined array contains:<br>';
+print_r($c);
 ?>
 	</body>
 </html>
