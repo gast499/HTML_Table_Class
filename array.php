@@ -150,6 +150,14 @@ $b = array("a" => 1.2, "b" => 2.3, "c" => 3.4);
 print_r($b);
 $sumb = array_sum($b);
 echo '<br>The sum of this array is: ' . "$sumb";
+
+//using array unique
+echo '<br><br>Array Unique Method:<br>Before removing duplicate values, the array contains:<br>';
+$input = array("a" => "green", "red", "b" => "green", "blue", "red");
+print_r($input);
+$result = array_unique($input);
+echo '<br>After removing duplicate values, the array contains:<br>';
+print_r($result);
 ?>
 	</body>
 </html>
