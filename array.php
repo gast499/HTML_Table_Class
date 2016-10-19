@@ -100,6 +100,14 @@ print_r($a);
 $b = array_map("cube", $a);
 echo '<br>After mapping, the mapped array contains:<br>';
 print_r($b);
+
+//using array fill
+echo '<br><br>Array Fill Method:<br>The first array is filled with bananas: <br>';
+$a = array_fill(5, 6, 'banana');//starts at index 5 and inserts the value banana into the next 6 indices.
+print_r($a);
+$b = array_fill(-2, 4, 'pear');
+echo '<br>The second array is filled with pears: <br>';
+print_r($b);
 ?>
 	</body>
 </html>
