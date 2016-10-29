@@ -148,6 +148,17 @@ echo '<br><br>Str GetCSV Method:<br>';
 $csv = array_map('str_getcsv', file('contacts.csv'));
 print_r($csv);
 
+//using strip_tags
+echo '<br><br>Strip Tags Method:<br>';
+$text = '<p>Test paragraph.</p><!-- Comment --> <a href="#fragment">Other text</a>';
+echo 'The string before tags are stripped:<br>';
+echo "$text";
+echo '<br>The string after tags are stripped:<br>';
+echo strip_tags($text);
+echo '<br>The string after all tags are stripped excluding the a tag: ';
+// Allow <p>
+echo strip_tags($text, '<a>');
+
 //using strreplace
 // Provides: You should eat pizza, beer, and ice cream every day
 echo '<br><br>StrReplace Method:<br>Before StrReplace Method: ';
