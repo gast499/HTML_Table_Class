@@ -40,6 +40,11 @@ foreach (count_chars($data2, 1) as $i => $val) {
    echo '<br>';
 }
 
+//using echo
+echo '<br><br>Echo Method:<br>Echoing a string prints the string.<br>Example: ';
+echo 'This is an echoed string';
+
+
 //using explode
 echo '<br><br>';
 echo 'Explode Method:';
