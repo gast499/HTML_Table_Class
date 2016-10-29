@@ -10,6 +10,14 @@ echo "$str" . '<br>String after the Add Slashes Method: ';
 // Outputs: Is your name O\'Reilly?
 echo addslashes($str);
 
+//using chr
+echo '<br><br>Chr Method:<br>The ASCII value for the character we will use is: ';
+$val = 47;
+echo "$val" . '<br>';
+$str = "The string ends in a slash: ";
+$str .= chr($val); /* add an slash character at the end of $str */
+echo "$str";
+
 
 // using chunk split
 echo '<br><br>Chunk Split Method:';
