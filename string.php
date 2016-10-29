@@ -203,6 +203,14 @@ if ($pos2 !== false) {
     echo "We found '$findme' in '$mystring2' at position $pos2";
 }
 
+//using strlen
+echo '<br><br>Strlen Method:<br>The string is: ';
+$str = 'abcdef';
+echo "$str";
+echo '<br>The length of the string is: ';
+echo strlen($str); // 6
+
+
 //using strtolower
 echo '<br><br>Str To Lower Method:<br>Before the Str To Lower method: ';
 $str = "Mary Had A Little Lamb and She LOVED It So";
