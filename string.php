@@ -3,8 +3,16 @@
 	</head>
 	<body>
 <?php
+//using add slashes
+echo 'Add Slashes Method:<br>String before the Add Slashes Method: ';
+$str = "Is your name O'Reilly?";
+echo "$str" . '<br>String after the Add Slashes Method: ';
+// Outputs: Is your name O\'Reilly?
+echo addslashes($str);
+
+
 // using chunk split
-echo 'Chunk Split Method:';
+echo '<br><br>Chunk Split Method:';
 echo '<br>';
 $data = 'Hey.  My name is John.  I like food.  Food is good.  Yum.';
 echo "$data";
