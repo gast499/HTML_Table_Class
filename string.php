@@ -143,6 +143,11 @@ echo '<br>';
 $trimmed = rtrim($hello, "Hdle");
 echo "$trimmed";
 
+//using str getcsv
+echo '<br><br>Str GetCSV Method:<br>';
+$csv = array_map('str_getcsv', file('contacts.csv'));
+print_r($csv);
+
 //using strreplace
 // Provides: You should eat pizza, beer, and ice cream every day
 echo '<br><br>StrReplace Method:<br>Before StrReplace Method: ';
